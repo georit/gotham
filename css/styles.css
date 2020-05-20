@@ -1,0 +1,200 @@
+                    /* ====================================== CSS RESET ========================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+                    /* ====================================== GENERAL ========================================== */
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.woff) format('woff'),
+         url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Light.woff) format('woff'),
+         url(../fonts/Roboto-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(../fonts/ProximaNova-Light.woff) format('woff'),
+         url(../fonts/ProximaNova-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(../fonts/ProximaNova-Bold.woff) format('woff'),
+         url(../fonts/ProximaNova-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+                    /* ====================================== GENERAL ========================================== */
+
+.page-header, .page-footer {
+    height: 67px;
+    width: 100%;
+    background: #F7C61D;
+}
+
+.wrapper {
+    width: 1170px;
+    height: 100%;
+}
+
+.page-header .wrapper, .page-footer .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header nav a {
+    font-family: ProximaNova;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 35px;
+}
+
+/* ====================================== MAIN ========================================== */
+.main {
+    display: flex;
+}
+
+main {
+    width: 77%;
+}
+
+.right-sidebar {
+    width: 23%;
+}
+
+article {
+    display: flex;
+}
+
+.article-left {
+    width: 30%;
+}
+
+.article-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: ProximaNova;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+article h3 {
+    font-family: ProximaNova;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.meta {
+    font-family: Roboto;
+    font-weight: 300;
+    color: #999999;
+    
+}
+
+
+/* ====================================== FOOTER ========================================== */
+
+.page-footer>.wrapper>* {
+    width: 33.33%;
+}
+
+.copy {
+    color: #A78613;
+    font-weight: ProximaNova;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.footer-nav a {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 18px;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials a {
+    display: block;
+    background: #ffffff;
+    color: #F7C61D;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 11px;
+}
