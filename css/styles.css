@@ -90,6 +90,7 @@ body {
 .wrapper {
     width: 1170px;
     height: 100%;
+    margin:  0 auto;
 }
 
 .page-header .wrapper, .page-footer .wrapper {
@@ -126,6 +127,7 @@ main {
 
 article {
     display: flex;
+    margin-bottom: 50px;
 }
 
 .article-left {
@@ -136,12 +138,19 @@ article {
     width: 70%;
     display: flex;
     flex-direction: column;
+    padding-left: 25px;
+    justify-content: space-between;
 }
 
 h2 {
     font-family: ProximaNova;
     font-size: 24px;
     font-weight: bold;
+    margin: 40px 0 15px;
+}
+
+.article-left img {
+    border-radius: 3px;
 }
 
 article h3 {
@@ -154,9 +163,76 @@ article h3 {
     font-family: Roboto;
     font-weight: 300;
     color: #999999;
-    
 }
 
+.meta span::after {
+    display: inline-block;
+    content: '|';
+    font-size: 13px;
+    color: #999999;
+}
+
+.meta span:last-child:after {
+    display: none;
+}
+
+.category {
+    color: #e3b002;
+}
+
+.description {
+    color: #555555;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.description::after {
+    content: '>';
+    color: #e3b002;
+}
+
+.additional {
+    color: #999999;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.views::before, .comments::before {
+    content: '\f06e';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.views::after {
+    content: '|';
+    margin: 0 10px;
+}
+
+.comments::before {
+    content: '\f075';
+    color: #999999;
+}
+
+.comments {
+    color: #e3b002;
+}
+
+.more {
+    width: 170px;
+    height: 42px;
+    background: transparent;
+    color: #000;
+    font-family: Roboto;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid #e3b002;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto 82px;
+}
 
 					/* ============================ FOOTER ================================ */
 
